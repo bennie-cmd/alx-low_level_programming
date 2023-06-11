@@ -1,11 +1,11 @@
 #include "main.h"
-void _puts(char *str)
+void _puts(char *str);
 #include<stdio.h>
 /**
-*main-Where the code begins
-*_puts - function method with parameter
+* main - The beginning point
+* _puts - Prints str parameter
 * Return: Always 0 (Success)
-*/
+ */
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
