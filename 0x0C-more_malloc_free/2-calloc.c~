@@ -1,0 +1,22 @@
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * *_memset - This fills mem with a const byte
+ * @s: The mem area to be filled
+ * @b: The b character to be copy
+ * @n: The n num times to copy b
+ * Return: Returns pointer to the mem area s
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+unsigned int i;
+
+for (i = 0; i < n; i++)
+{
+s[i] = b;
+}
+
+return (s);
+}
+
