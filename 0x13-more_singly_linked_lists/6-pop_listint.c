@@ -1,0 +1,19 @@
+#include "lists.h"
+
+/**
+ * pop_listint - This function removes linked list
+ * @head: This varible head shows first element in the linked list.
+ * Return: The data inside the elements that was remove.
+ */
+int pop_listint(listint_t **head)
+{
+listint_t *temp;
+int num;
+if (!head || !*head)
+return (0);
+num = (*head)->n;
+temp = (*head)->next;
+free(*head);
+*head = temp;
+return (num);
+}
